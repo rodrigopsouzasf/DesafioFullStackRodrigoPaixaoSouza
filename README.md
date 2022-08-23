@@ -44,24 +44,31 @@ Endereços:
 
 Get all:
 
-- http://localhost:3000/user
-- http://localhost:3000/vehicle
-- http://localhost:3000/vehicledata
+- get http://localhost:3000/user
+- get http://localhost:3000/vehicle
+- get http://localhost:3000/vehicledata
 
 Get por ID
 
-http://localhost:3000/user/1
-http://localhost:3000/vehicle/1
-http://localhost:3000/vehicledata/1
+- get http://localhost:3000/user/1
+- get http://localhost:3000/vehicle/1
+- get http://localhost:3000/vehicledata/1
 
 Post
 
-http://localhost:3000/user
-http://localhost:3000/vehicle
-http://localhost:3000/vehicledata
+- post http://localhost:3000/user
+- post http://localhost:3000/vehicle
+- post http://localhost:3000/vehicledata
 
 Put
 
-http://localhost:3000/user/1
-http://localhost:3000/vehicle/1
-http://localhost:3000/vehicledata/1
+- put http://localhost:3000/user/1 (com dados a serem alterados)
+- put http://localhost:3000/vehicle/1 (com dados a serem alterados)
+- put http://localhost:3000/vehicledata/1 (com dados a serem alterados)
+
+Delete
+
+- delete http://localhost:3000/user/1 (ou id de qualquer item que queira excluir)
+- delete http://localhost:3000/vehicle/1 (ou id de qualquer item que queira excluir)
+- delete http://localhost:3000/vehicledata/1 (ou id de qualquer item que queira excluir)
+
