@@ -1,0 +1,9 @@
+<div class="w-50"  *ngIf="chart2">
+  <canvas id="canvas2">{{ chart2 }}</canvas>
+  <ng-content select="p"></ng-content>
+</div>
+<div class="w-50"   *ngIf="chart">
+  <canvas id="canvas">{{ chart }}</canvas>
+  <ng-content select="h5"></ng-content>
+</div>
+

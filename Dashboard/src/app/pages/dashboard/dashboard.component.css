@@ -1,0 +1,27 @@
+.container{
+  margin-top: 80px;
+}
+
+.table-color{
+  background-color: #004377;
+}
+
+select{
+  margin-top: 45px;
+}
+
+.textGraph{
+  color: #004377;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+button:disabled{
+  background-color: gray;
+  border-color: gray;
+}
+
+.imagem-center{
+  margin-top: 80px;
+}

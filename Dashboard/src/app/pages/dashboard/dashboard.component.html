@@ -1,0 +1,94 @@
+<div class="container" >
+  <div class="row">
+    <div class="col text-center p-5 text-primary">
+      <h1>DASHBOARD FORD</h1>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4" *ngIf="veiculoSelect$ as carselect">
+
+
+    <app-cartao>
+      <h5>Veículo</h5>
+      <select class="form-select position-relative top-50" aria-label="Default select example" (change)="changeVeic($event)">
+        <option  selected disabled>Selecione um carro</option>
+        <option *ngFor="let veiculo of veiculos$ | async as veiculos" value={{veiculo.id}}>{{veiculo.vehicle}}</option>
+      </select>
+    </app-cartao>
+
+
+    <app-cartao>
+      <h5>Volume Total</h5>
+      <h1 >{{carselect.volumetotal |number}}</h1>
+      <p>Unid.</p>
+    </app-cartao>
+
+
+    <app-cartao>
+      <h5>Conectados</h5>
+      <h1>{{carselect.connected | number}}</h1>
+      <p>Unid.</p>
+    </app-cartao>
+    <app-cartao>
+      <h5>Update de Software</h5>
+      <h1>{{carselect.softwareUpdates | number}}</h1>
+      <p>Unid.</p>
+    </app-cartao>
+
+
+  </div>
+
+
+  <div class="row m-2" *ngIf="veiculoSelect$ as carselect">
+    <div class="col col-7">
+
+      <img src='{{"assets/img/"+ carselect.vehicle.toLowerCase() +".png"}}' class="img-fluid d-none d-sm-block mx-auto w-75 imagem-center" alt="{{'imagem de um ' + carselect.vehicle}}">
+
+
+    </div>
+    <div class="col col-5">
+       <app-grafico>
+        <h5 class="textGraph text-center">{{calculateConect()}}%</h5>
+        <p class="textGraph text-center">{{calculateUpdate()}}%</p>
+
+       </app-grafico>
+
+    </div>
+
+  </div>
+
+  <div>
+    <app-tabela class="text-center">
+      <td scope="row" class="btn-group">
+        <input type="search" class="form-control" placeholder="Insira o código do veículo"
+        [formControl]="veiculoDataInput"  >
+
+        <button type="button" class="btn btn-primary ms-1 opacity-75 rounded"><i class="fa fa-plus" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="clearDataVeic()"></i></button>
+        <button type="button" class="btn btn-warning ms-1 opacity-75 rounded" [disabled]="!TesteFiltro"><i class="fa fa-refresh" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#exampleModal"  (click)="updateDataVeic()"></i></button>
+        <button type="button" class="btn btn-danger ms-1 opacity-75 rounded" [disabled]="!TesteFiltro"><i class="fa fa-trash" aria-hidden="true" (click)="alertDelete()"></i></button>
+      </td>
+        <td  *ngIf="TesteFiltro">{{TesteFiltro[0].odometer | number }} KM</td>
+        <td  *ngIf="TesteFiltro">{{TesteFiltro[0].fuelLevel + '%'}}</td>
+        <td  *ngIf="TesteFiltro">{{TesteFiltro[0].status}}</td>
+        <td  *ngIf="TesteFiltro">{{TesteFiltro[0].lat}}</td>
+        <td *ngIf="TesteFiltro">{{TesteFiltro[0].longi}}</td>
+
+    </app-tabela>
+
+    <app-modal></app-modal>
+
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+

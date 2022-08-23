@@ -1,0 +1,24 @@
+<table class="table">
+  <thead class="table-color text-white">
+    <tr>
+      <th scope="col">Código - Vin</th>
+      <th scope="col">Odômetro</th>
+      <th scope="col">Nível de Combustivel</th>
+      <th scope="col">Status</th>
+      <th scope="col">Lat.</th>
+      <th scope="col">Long.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <ng-content select="td"></ng-content>
+      <td scope="row" *ngIf="conteudo">{{conteudo}}</td>
+    </tr>
+
+  </tbody>
+  <tfoot class="table-color">
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+  </tfoot>
+</table>

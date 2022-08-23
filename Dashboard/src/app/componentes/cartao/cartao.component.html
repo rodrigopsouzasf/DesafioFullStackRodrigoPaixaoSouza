@@ -1,0 +1,22 @@
+
+<div class="col">
+  <div class="card">
+
+    <div class="card-header h5">
+      <ng-content select="h5"></ng-content>
+      <h5 class="text-primary " *ngIf="titulo">{{titulo}}></h5>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2" style="height: 130px;">
+        <div class="text-center text-primary">
+          <ng-content select="h1"></ng-content>
+          <h1 class="text-primary " *ngIf="complemento">{{complemento}}></h1>
+          <ng-content select="select"></ng-content>
+          <select *ngIf="complemento">{{complemento}}></select>
+        </div>
+        <ng-content select="p"></ng-content>
+        <p text-light *ngIf="unidade">{{unidade}}></p>
+      </div>
+    </div>
+  </div>
+</div>

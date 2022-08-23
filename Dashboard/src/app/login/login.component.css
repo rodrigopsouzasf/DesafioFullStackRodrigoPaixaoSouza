@@ -1,0 +1,18 @@
+.logo{
+  max-width:150px;
+  max-height:70px;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.imgHome{
+  height: auto;
+  width: auto;
+  margin: 200px;
+}
+
+.loginForm{
+  background-color: rgba(239, 239, 239,0.4);
+}

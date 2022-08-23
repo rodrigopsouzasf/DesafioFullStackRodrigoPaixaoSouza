@@ -1,0 +1,61 @@
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Veiculo Data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3 form-group">
+            <label for="vinImput" class="form-label">Vin</label>
+            <input type="text" class="form-control" id="vinImput" aria-describedby="vinHelp" name="vinInput" [(ngModel)]="veiculoData.vin">
+            <div id="vinHelp" class="form-text">Digite o vin de seu veiculo</div>
+          </div>
+          <div class="mb-3 form-group">
+            <label for="odometerInput" class="form-label">Odômetro</label>
+            <input type="text" class="form-control" id="odometerInput" name="odometerInput" [(ngModel)]="veiculoData.odometer">
+          </div>
+          <div class="mb-3 form-group">
+            <label class="form-label" for="fuelInput">Nível de Combustivel</label>
+            <input type="text" class="form-control" id="fuelInput" name="fuelInput" [(ngModel)]="veiculoData.fuelLevel">
+          </div>
+          <div class="mb-3 form-group">
+            <label class="form-label" for="statusInput">Status</label>
+            <input type="text" class="form-control" id="statusInput" name="statuInput" [(ngModel)]="veiculoData.status">
+          </div>
+          <div class="mb-3 form-group">
+            <label class="form-label" for="latInput">Lat.</label>
+            <input type="text" class="form-control" id="latInput" name="latInput" [(ngModel)]="veiculoData.lat">
+          </div>
+          <div class="mb-3 form-group">
+            <label class="form-label" for="longInput">Long.</label>
+            <input type="text" class="form-control" id="longInput" name="longInput" [(ngModel)]="veiculoData.longi">
+          </div>
+          <div class="mb-3 form-group">
+            <label class="form-label" for="batteryStatusInput">Status da Bateria</label>
+            <input type="text" class="form-control" id="batteryStatusInput" name="batteryStatusInput" [(ngModel)]="veiculoData.batteryStatus">
+          </div>
+          <div class="mb-3 form-group">
+            <label class="form-label" for="tirePressureInput">Pressão dos Pneus</label>
+            <input type="text" class="form-control" id="tirePressureInput" name="tirePressureInput" [(ngModel)]="veiculoData.tirePressure">
+          </div>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success" (click)="salvarVeiculoData()">Salvar</button>
+        <button type="submit" class="btn btn-warning" (click)="atualizaVeiculoData()">Atualizar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+
+  <nav class="navbar navbar-light bg-light fixed-top" >
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div  *ngIf="user$ | async as user">
+        <div *ngIf="user.name; else login">
+          <i class="fa fa-user-circle mr-1" id="userIcon"></i>
+          <a class="mr-1" id="userName">{{user.name}}</a>
+          <a (click)="logout()" id="logout"><strong>Logout</strong></a>
+        </div>
+
+      </div>
+
+
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img class="rounded float-start logo w-50" src="assets/img/ford.png" alt="logo da ford">
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1">
+            <li class="nav-item bg-light border-start border-danger border-2">
+              <a class="nav-link active link-success" aria-current="page" [routerLink]="['.']">Home</a>
+            </li>
+            <li class="nav-item bg-light">
+              <a class="nav-link active link-success" [routerLink]="['dashboard']">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <ng-template #login>
+    <span class="navbar-text">
+      <a [routerLink]="['']">Login</a>
+    </span>
+  </ng-template>
+
+

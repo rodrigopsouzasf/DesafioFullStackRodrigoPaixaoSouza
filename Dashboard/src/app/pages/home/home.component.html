@@ -1,0 +1,16 @@
+
+
+<div class="card text-center  card-msg col-md-8 text-center">
+  <div class="card-header bg-primary text-white" *ngIf="user$ | async as user">
+    Seja Bem vindo {{user.name?.toLocaleUpperCase()}} ao FordDashboard!
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Login Feito com Sucesso!</h5>
+    <p class="card-text">Acesse, Analise e se Divirta!</p>
+  </div>
+</div>
+
+
+<div class="col-md-12 text-center">
+  <img src="assets/img/ranger.png" class="img-fluid d-none d-sm-block mx-auto imgHome" alt="...">
+</div>
