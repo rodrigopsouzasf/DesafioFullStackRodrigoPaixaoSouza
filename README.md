@@ -8,8 +8,14 @@
 Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4. para o CURSO DE FORMACÃO TI do SENAI CIMATEC e FORD
 
 ## Requisitos
-- Banco de dados Mysql
-- Node js
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Mysql](https://www.mysql.com/)
+- [Angular](https://angular.io/)
 
 ## Antes de Rodar a aplicação
 
@@ -105,4 +111,6 @@ Delete
 <h1 align="right">
   <img alt="Exemplo 3 de Aplicação" title="#exemplo3" src="./Dashboard/src/assets/img/exemplo3.png" />
 </h1>
+
+
 
