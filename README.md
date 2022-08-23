@@ -29,11 +29,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </h1>
 
 
-- Execute dentro da pasta da aplicação execute o comando npm i
+- Execute dentro da pasta da aplicação o comando npm i
 
 ### Dashboard
 
-- Execute dentro da pasta da aplicação execute o comando npm i
+- Execute dentro da pasta da aplicação o comando npm i
 
 ## Development server
 
