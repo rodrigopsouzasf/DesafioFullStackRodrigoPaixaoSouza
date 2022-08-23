@@ -36,7 +36,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Utilizando a aplicação!
 
-Para rodar o seriço, execute `ng serve`. Navegue pelo link `http://localhost:4200/`. A aplicação irá automaticamente carregar os dados padrões assim como seu banco de dados.
+Para rodar o serviço, execute `ng serve`. Navegue pelo link `http://localhost:4200/`. A aplicação irá automaticamente carregar os dados padrões assim como seu banco de dados.
 
 ## Status do Projeto
 
