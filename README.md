@@ -13,7 +13,9 @@ Para rodar o seriço, execute `ng serve`. Navegue pelo link `http://localhost:42
 
 ## Sobre mim
 
-Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formação em TI, Esse foi um grande desafio e também um momento de muita satis fação. Onde pude me desafiar profissionalmente.
+Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formação em TI, Esse foi um grande desafio e também um momento de muita satisfação. 
+
+Onde pude me desafiar profissionalmente e agregar muito conhecimento. Foi algo totalmente novo, já que não tinha nenhum conhecimento em HTML, CSS, Javascript, Typescript e Angular. Por isso poder analisar de onde comecei até aqui foi muito bom.
 
 ## Status do Projeto
 
@@ -71,4 +73,14 @@ Delete
 - delete http://localhost:3000/user/1 (ou id de qualquer item que queira excluir)
 - delete http://localhost:3000/vehicle/1 (ou id de qualquer item que queira excluir)
 - delete http://localhost:3000/vehicledata/1 (ou id de qualquer item que queira excluir)
+
+## Exemplos
+
+<h1 align="left">
+  <img alt="Exemplo 2 de Aplicação" title="#exemplo2" src="./Dashboard/src/assets/img/exemplo2.png" />
+</h1>
+
+<h1 align="right">
+  <img alt="Exemplo 3 de Aplicação" title="#exemplo2" src="./Dashboard/src/assets/img/exemplo3.png" />
+</h1>
 
