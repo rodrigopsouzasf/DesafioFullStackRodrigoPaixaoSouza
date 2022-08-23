@@ -1,5 +1,8 @@
 <h1 align='center'>Desafio Full Stack Rodrigo Paixão de Souza</h1>
 
+
+
+
 # ForDashboard
 
 Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4. para o CURSO DE FORMACÃO TI do SENAI CIMATEC e FORD
@@ -15,6 +18,10 @@ Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formaç
 ## Status do Projeto
 
 Consegui finalizar 100% das etapas solicitas no documento do desafio, mas ainda gostaria de implementar algumas funcionalidades.
+
+- [X] Schema do Banco de Dados com as Tabelas Veiculos, Dados dos Veiculos e Usuário
+- [X] Operacões Listar Todos, Incluir Registro, Listar um registro, Alterar dado e Excluir dado
+- [X] Frontend enviando e recebendo dados para o banco Mysql
 
 ## Acesso ao Projeto
 
