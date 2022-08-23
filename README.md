@@ -1,6 +1,6 @@
 # ForDashboard
 
-Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4. para o CURSO DE FORMACÃO TI do SENAI SIMANTEC e FORD
+Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4. para o CURSO DE FORMACÃO TI do SENAI CIMATEC e FORD
 
 ## Development server
 
