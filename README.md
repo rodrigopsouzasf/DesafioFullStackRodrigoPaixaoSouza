@@ -1,4 +1,4 @@
-<h1 align='center' color='blue'>Desafio Full Stack Rodrigo Paixão de Souza</h1>
+<h1 align='center' `rgb(9, 105, 218)`>Desafio Full Stack Rodrigo Paixão de Souza</h1>
 
 
 
