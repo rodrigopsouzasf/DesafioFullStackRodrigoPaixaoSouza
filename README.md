@@ -7,6 +7,28 @@
 
 Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4. para o CURSO DE FORMACÃO TI do SENAI CIMATEC e FORD
 
+## Requisitos
+- Banco de dados Mysql
+- Node js
+
+## Antes de Rodar a aplicação
+
+### API
+
+- Crie um Schema no seu banco de dado Mysql
+- Crie um arquivo .env e insira as informações abaixo:
+
+<h1 align="right">
+  <img alt="Exemplo 4 de Aplicação" title="#exemplo4" src="./Dashboard/src/assets/img/exemplo4.png" />
+</h1>
+
+
+- Execute dentro da pasta da aplicação o comando npm i
+
+### Dashboard
+
+- Execute dentro da pasta da aplicação o comando npm i
+
 ## Development server
 
 Para rodar o seriço, execute `ng serve`. Navegue pelo link `http://localhost:4200/`. A aplicação irá automaticamente carregar os dados padrões assim como seu banco de dados.
@@ -81,6 +103,6 @@ Delete
 </h1>
 
 <h1 align="right">
-  <img alt="Exemplo 3 de Aplicação" title="#exemplo2" src="./Dashboard/src/assets/img/exemplo3.png" />
+  <img alt="Exemplo 3 de Aplicação" title="#exemplo3" src="./Dashboard/src/assets/img/exemplo3.png" />
 </h1>
 
