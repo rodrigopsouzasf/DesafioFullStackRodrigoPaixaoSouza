@@ -35,7 +35,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - Execute dentro da pasta da aplicação o comando npm i
 
-## Development server
+## Utilizando a aplicação!
 
 Para rodar o seriço, execute `ng serve`. Navegue pelo link `http://localhost:4200/`. A aplicação irá automaticamente carregar os dados padrões assim como seu banco de dados.
 
