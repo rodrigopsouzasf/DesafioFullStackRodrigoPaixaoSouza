@@ -13,7 +13,7 @@ Para rodar o seriço, execute `ng serve`. Navegue pelo link `http://localhost:42
 
 ## Sobre mim
 
-Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formação em TI, Esse foi um grande desafio e também um momento de muita satifação. Onde pude me desafiar profissionalmente.
+Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formação em TI, Esse foi um grande desafio e também um momento de muita satis fação. Onde pude me desafiar profissionalmente.
 
 ## Status do Projeto
 
@@ -38,15 +38,15 @@ Foram incluidos alguns modelos de carros a mais para teste da aplicaçao.
 ## Comandos para consulta na API
 
 Endereços:
-http://localhost:3000/user
-http://localhost:3000/vehicle
-http://localhost:3000/vehicledata
+- http://localhost:3000/user
+- http://localhost:3000/vehicle
+- http://localhost:3000/vehicledata
 
 Get all:
 
-http://localhost:3000/user
-http://localhost:3000/vehicle
-http://localhost:3000/vehicledata
+- http://localhost:3000/user
+- http://localhost:3000/vehicle
+- http://localhost:3000/vehicledata
 
 Get por ID
 
