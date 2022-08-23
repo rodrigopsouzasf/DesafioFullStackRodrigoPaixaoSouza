@@ -23,6 +23,10 @@ Consegui finalizar 100% das etapas solicitas no documento do desafio, mas ainda 
 - [X] Operacões Listar Todos, Incluir Registro, Listar um registro, Alterar dado e Excluir dado
 - [X] Frontend enviando e recebendo dados para o banco Mysql
 
+<h1 align="center">
+  <img alt="Exemplo de Aplicação" title="#exemplo" src="./Dashboard/src/assets/img/exemplo.png" />
+</h1>
+
 ## Acesso ao Projeto
 
 Para acessar automatizei o login para teste da aplicação, mas foram criados os seguintes usuários admin, marcos, patricia e rodrigo todos possuem senha padrão "123456" para teste da API
