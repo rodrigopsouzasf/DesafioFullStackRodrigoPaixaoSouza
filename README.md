@@ -16,6 +16,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Mysql](https://www.mysql.com/)
 - [Angular](https://angular.io/)
+- [Postman](https://www.postman.com/)
 
 ## Antes de Rodar a aplicação
 
