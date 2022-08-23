@@ -11,8 +11,6 @@ Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-c
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Mysql](https://www.mysql.com/)
 - [Angular](https://angular.io/)
@@ -39,12 +37,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Utilizando a aplicação!
 
 Para rodar o seriço, execute `ng serve`. Navegue pelo link `http://localhost:4200/`. A aplicação irá automaticamente carregar os dados padrões assim como seu banco de dados.
-
-## Sobre mim
-
-Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formação em TI, Esse foi um grande desafio e também um momento de muita satisfação. 
-
-Onde pude me desafiar profissionalmente e agregar muito conhecimento. Foi algo totalmente novo, já que não tinha nenhum conhecimento em HTML, CSS, Javascript, Typescript e Angular. Por isso poder analisar de onde comecei até aqui foi muito bom.
 
 ## Status do Projeto
 
@@ -112,6 +104,13 @@ Delete
 <h1 align="right">
   <img alt="Exemplo 3 de Aplicação" title="#exemplo3" src="./Dashboard/src/assets/img/exemplo3.png" />
 </h1>
+
+
+## Sobre mim
+
+Me chamo Rodrigo Paixão de Souza, esse é meu projeto final do curso de formação em TI, Esse foi um grande desafio e também um momento de muita satisfação. 
+
+Onde pude me desafiar profissionalmente e agregar muito conhecimento. Foi algo totalmente novo, já que não tinha nenhum conhecimento em HTML, CSS, Javascript, Typescript e Angular. Por isso poder analisar de onde comecei até aqui foi muito bom.
 
 
 
