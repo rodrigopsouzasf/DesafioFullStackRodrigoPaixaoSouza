@@ -16,7 +16,7 @@ Consegui finalizar 100% das etapas solicitas no documento do desafio, mas ainda 
 
 ## Acesso ao Projeto
 
-Para acessar automatizei o login para teste da aplicação, mas foram criados os seguins usuários admin, marcos, patricia e rodrigo todos possuem senha padrão "123456" para teste da API
+Para acessar automatizei o login para teste da aplicação, mas foram criados os seguintes usuários admin, marcos, patricia e rodrigo todos possuem senha padrão "123456" para teste da API
 
 ## Alterações
 
