@@ -21,3 +21,34 @@ Para acessar automatizei o login para teste da aplicação, mas foram criados os
 ## Alterações
 
 Foram incluidos alguns modelos de carros a mais para teste da aplicaçao.
+
+## Comandos para consulta na API
+
+Endereços:
+http://localhost:3000/user
+http://localhost:3000/vehicle
+http://localhost:3000/vehicledata
+
+Get all:
+
+http://localhost:3000/user
+http://localhost:3000/vehicle
+http://localhost:3000/vehicledata
+
+Get por ID
+
+http://localhost:3000/user/1
+http://localhost:3000/vehicle/1
+http://localhost:3000/vehicledata/1
+
+Post
+
+http://localhost:3000/user
+http://localhost:3000/vehicle
+http://localhost:3000/vehicledata
+
+Put
+
+http://localhost:3000/user/1
+http://localhost:3000/vehicle/1
+http://localhost:3000/vehicledata/1
