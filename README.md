@@ -24,7 +24,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Crie um Schema no seu banco de dado Mysql
 - Crie um arquivo .env e insira as informações abaixo:
 
-<h1 align="right">
+<h1 align="right" style="color: rgb(122,122,122)">
   <img alt="Exemplo 4 de Aplicação" title="#exemplo4" src="./Dashboard/src/assets/img/exemplo4.png" />
 </h1>
 
