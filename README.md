@@ -19,7 +19,7 @@ Onde pude me desafiar profissionalmente e agregar muito conhecimento. Foi algo t
 
 ## Status do Projeto
 
-Consegui finalizar 100% das etapas solicitas no documento do desafio, mas ainda gostaria de implementar algumas funcionalidades.
+Consegui finalizar 100% das etapas solicitadas no documento do desafio, mas ainda gostaria de implementar algumas funcionalidades.
 
 - [X] Schema do Banco de Dados com as Tabelas Veiculos, Dados dos Veiculos e Usuário
 - [X] Operacões Listar Todos, Incluir Registro, Listar um registro, Alterar dado e Excluir dado
