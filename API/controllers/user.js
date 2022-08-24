@@ -10,12 +10,7 @@ module.exports= app =>{
         res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
         res.header("Access-Control-Allow-Headers", "x-access-token, Origin, X-Requested-With, X-XSRF-TOKEN, Authorization, Content-Type, Accept");
     
-        if ('OPTIONS' === req.method) {
-          res.sendStatus(200);
-        }
-        else {
-          next();
-        }
+        next()
     });
 
      app.get('/user',(req,res)=>{
