@@ -105,7 +105,7 @@ Delete
   <img alt="Exemplo 3 de Aplicação" title="#exemplo3" src="./Dashboard/src/assets/img/exemplo3.png" />
 </h1>
 
-[![Demonstração](./Dashboard/src/assets/img/exemplo.png)](https://youtu.be/wezdRboPSyo)
+[![Demonstração]](https://youtu.be/wezdRboPSyo)
 
 
 ## Sobre mim
