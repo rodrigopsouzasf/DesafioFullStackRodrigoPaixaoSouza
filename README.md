@@ -79,7 +79,7 @@ Get por ID
 
 Post
 
-- post http://localhost:3000/user
+- post http://localhost:3000//user/register
 - post http://localhost:3000/vehicle
 - post http://localhost:3000/vehicledata
 
