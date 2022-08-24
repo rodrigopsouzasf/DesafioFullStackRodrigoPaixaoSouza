@@ -3,6 +3,7 @@ const conexao = require('./infraestrutura/conexao')
 const TabelasVehicle = require('./infraestrutura/tabelasVehicle')
 const TabelasVehicleData = require('./infraestrutura/tabelasVehicleData')
 const TabelasUser = require('./infraestrutura/tabelasUser')
+const cors = require('cors')
 
 
 conexao.connect(erro => {
@@ -18,6 +19,7 @@ conexao.connect(erro => {
         TabelasUser.init(conexao)
 
         const app = customExpress()
+        app.use(cors())
 
         //Tela de Bem vindo
         app.get('/',(req,res)=>{

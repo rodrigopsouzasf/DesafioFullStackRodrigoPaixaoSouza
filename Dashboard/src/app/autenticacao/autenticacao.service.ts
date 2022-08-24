@@ -23,7 +23,7 @@ export class AutenticacaoService {
       {observe:'response'}
     ).pipe(
       tap((res)=>{
-        const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvcmV0b3JuIjp7ImlkIjoyLCJuYW1lIjoicm9kcmlnbyIsImVtYWlsIjoicm9kcmlnb0B0ZXN0ZS5jb20ifSwiZXhwaXJlc0luIjo4NjQwMCwiaWF0IjoxNjYxMTc1MjM2fQ.EOo6HFinoco3wqKg3Si9MIUA92ccDM1sWkOKHF44r6E';
+        const authToken = res.headers.get('x-access-token') ?? '';
         this.usuarioService.salvaToken(authToken)
       })
     );

@@ -26,16 +26,6 @@ export class VeiculosDataService {
 
     }
 
-  // private ordenaPorCodigoData(veiculoA:VeiculoData,veiculoB:VeiculoData){
-  //   if(veiculoA.id > veiculoB.id){
-  //     return 1;
-  //   }
-  //   if(veiculoA.id<veiculoB.id){
-  //     return -1
-  //   }
-  //   return 0
-  // }
-
   cadastrar(veiculoData:VeiculoData):Observable<VeiculoData>{
     // console.log(this.selectVeiculoData(1))
     return this.http
@@ -43,14 +33,11 @@ export class VeiculosDataService {
   }
 
   atualizar(veiculoData:VeiculoData):Observable<VeiculoData>{
-    console.log(veiculoData)
     return this.http
     .put<VeiculoData>(`${API}/vehicledata/${veiculoData.id}`,veiculoData)
   }
 
   excluir(id:any):Observable<any>{
-    console.log(id,console.log('teste de delete'))
-    console.log(`${API}/vehicledata/${id}`)
     return this.http.delete<any>(`${API}/vehicledata/${id}`)
   }
 

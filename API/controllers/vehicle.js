@@ -12,7 +12,7 @@ module.exports = app => {
         next();
       });
 
-    app.get('/vehicle',(req,res)=>{
+      app.get('/vehicle',(req,res)=>{
         Vehicle.lista(res)
     })
     app.get('/vehicle/:id',(req,res)=>{

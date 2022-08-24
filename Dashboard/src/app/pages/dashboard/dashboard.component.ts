@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit{
   switchMap((valorDigitado)=>this.veiculosDataService.listaDoVeiculoData(valorDigitado)))
   .subscribe((value) => {
     if(value.length<2 )
-    this.TesteFiltro= value, console.log(this.TesteFiltro.length)})
+    this.TesteFiltro= value})
 
 
 
@@ -78,7 +78,6 @@ export class DashboardComponent implements OnInit{
 //Atualizar dados do vehicleData
   updateDataVeic():void{
       this.modalComponent.veiculoData=this.TesteFiltro[0]
-      console.log(this.modalComponent.veiculoData)
 
 
   }
@@ -96,7 +95,6 @@ export class DashboardComponent implements OnInit{
         longi: null
           }
       this.modalComponent.veiculoData=obj
-      console.log(this.modalComponent.veiculoData)
 
   }
 

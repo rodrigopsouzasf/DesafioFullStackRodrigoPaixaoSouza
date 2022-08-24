@@ -1,52 +1,52 @@
-const Users = require('../models/user')
+const Users = require('../models/user.js')
+const jwt = require('jsonwebtoken')
 
-module.exports = app => {
-    // Adicionar os cabeçalhos Access-Control-Allow-Origin
-    app.use((req, res, next) => {
-        res.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
-        res.header(
-          "Access-Control-Allow-Headers",
-          "Origin, X-Requested-With, Content-Type, Accept"
-        );
-        res.header('Access-Control-Allow-Methods','PUT,POST,PATCH,DELETE,GET')
-        next();
-      });
+
+module.exports= app =>{
+     // Adicionar os cabeçalhos Access-Control-Allow-Origin
+     app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Expose-Headers", "x-access-token");
+        res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+        res.header("Access-Control-Allow-Headers", "x-access-token, Origin, X-Requested-With, X-XSRF-TOKEN, Authorization, Content-Type, Accept");
+    
+        if ('OPTIONS' === req.method) {
+          res.sendStatus(200);
+        }
+        else {
+          next();
+        }
+    });
 
      app.get('/user',(req,res)=>{
-        let valor = ''
-        if(req.query.valor){
-            valor = req.query.valor
-        }
-         Users.lista(valor,res)
+         Users.lista(res)
+     })
+     app.get('/user/:id',(req,res)=>{
+         const id = parseInt(req.params.id)
+         Users.buscaPorId(id,res)
+     })
+
+    app.post('/user/register',(req,res)=>{
+        const users = req.body
+        Users.adiciona(users,res)
+    })
+
+    app.post('/user/login',(req,res,next)=>{
+        const users = req.body
+        Users.login(users,res,req,next)
     })
 
 
 
-    app.get('/user/:id',(req,res)=>{
-        const id = parseInt(req.params.id)
-        Users.buscaPorId(id,res)
-    })
+     app.put('/user/:id',(req,res)=>{
+       const id = parseInt(req.params.id) 
+       const valores = req.body
 
-    app.post('/user/login',(req,res)=>{
-        const user = req.body
-        Users.conect(user,res)
-    })
+       Users.altera(id,valores,res)
+     })
 
-    app.post('/user',(req,res)=>{
-    const user = req.body
-
-    Users.adiciona(user,res)
-    })
-
-    app.put('/user/:id',(req,res)=>{
-        const id = parseInt(req.params.id)
-        const valores = req.body
-  
-        Users.altera(id,valores,res)
-      })
-
-    app.delete('/user/:id',(req,res)=>{
-        const id = parseInt(req.params.id)
-        Users.delete(id,res)
-    })
+     app.delete('/user/:id',(req,res)=>{
+       const id = parseInt(req.params.id)
+       Users.delete(id,res)
+   })
 }
