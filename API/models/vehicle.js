@@ -14,7 +14,7 @@ class Vehicle{
     }
 
     lista(res){
-        const sql = 'SELECT * FROM VEHICLE'
+        const sql = 'SELECT id,vehicle,volumetotal,connected,softwareUpdates FROM VEHICLE'
 
         conexao.query(sql,(erro,resultado)=>{
             if(erro){
@@ -29,7 +29,7 @@ class Vehicle{
     }
 
     buscaPorId(id,res){
-        const sql = `SELECT * FROM VEHICLE WHERE id = ?`
+        const sql = `SELECT id,vehicle,volumetotal,connected,softwareUpdates FROM VEHICLE WHERE id = ?`
 
         conexao.query(sql,[id],(erro,resultado)=>{
             if(erro){

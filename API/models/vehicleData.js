@@ -16,7 +16,7 @@ class VehicleData{
    
     lista(valor,res){
         
-        const sql = `SELECT * FROM VEHICLEDATA WHERE vin like '%${valor}%'`
+        const sql = `SELECT id,vin,odometer,tirePressure,status,batteryStatus,fuelLevel,lat,longi FROM VEHICLEDATA WHERE vin like '%${valor}%'`
     
 
         conexao.query(sql,(erro,resultado)=>{
@@ -32,7 +32,7 @@ class VehicleData{
     }
 
     buscaPorId(id,res){
-        const sql = `SELECT * FROM VEHICLEDATA WHERE id = ${id}`
+        const sql = `SELECT id,vin,odometer,tirePressure,status,batteryStatus,fuelLevel,lat,longi FROM VEHICLEDATA WHERE id = ${id}`
 
         conexao.query(sql,(erro,resultado)=>{
             if(erro){

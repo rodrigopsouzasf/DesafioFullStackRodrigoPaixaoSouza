@@ -96,7 +96,7 @@ class Users{
     async findOne(userName) {
 
         return new Promise((resolve, reject) => conexao.query(
-            `SELECT * FROM users WHERE userName = ?`,
+            `SELECT userName,password FROM users WHERE userName = ?`,
             [userName],
             (err, row) => {
                 if (err) {
@@ -114,7 +114,7 @@ class Users{
 
 
      lista(res){
-         const sql = 'SELECT * FROM USERS'
+         const sql = 'SELECT id,userName,email,password,full_name,join_date FROM USERS'
 
          conexao.query(sql,(erro,resultado)=>{
              if(erro){
@@ -129,7 +129,7 @@ class Users{
      }
 
      buscaPorId(id,res){
-         const sql = `SELECT * FROM USERS WHERE id = ?`
+         const sql = `SELECT id,userName,email,password,full_name,join_date FROM USERS WHERE id = ?`
 
          conexao.query(sql,[id],(erro,resultado)=>{
              if(erro){
