@@ -97,6 +97,8 @@ Delete
 
 ## Exemplos
 
+[Video de Demonstração](https://youtu.be/wezdRboPSyo)
+
 <h1 align="left">
   <img alt="Exemplo 2 de Aplicação" title="#exemplo2" src="./Dashboard/src/assets/img/exemplo2.png" />
 </h1>
@@ -105,7 +107,6 @@ Delete
   <img alt="Exemplo 3 de Aplicação" title="#exemplo3" src="./Dashboard/src/assets/img/exemplo3.png" />
 </h1>
 
-[Video de Demonstração](https://youtu.be/wezdRboPSyo)
 
 
 ## Sobre mim
