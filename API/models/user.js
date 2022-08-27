@@ -55,9 +55,7 @@ class Users{
 
         const usuario = await this.findOne(user.userName)
         //usuario.then(res=> console.log(res))
-        console.log(user)
         
-        console.log(usuario)
         if(!usuario){
             return res.status(404).json({msg:"Usuario não cadastrado"})
         }
@@ -73,12 +71,15 @@ class Users{
             return res.status(422).json({msg: 'password invalida'})
         }
 
+        
+
         //const usuarioretorn = await this.findRetorn(user.userName)
 
         try{
             const secret = process.env.SECRET
             const token = jwt.sign({id:usuario.id,name:usuario.userName,email:usuario.email,expiresIn: 86400 // seconds, 24h
 },secret);  
+            console.log(`${user.userName} autorizado`)
             res.set('x-access-token',token);
             res.status(200).json({msg: 'Autenticação realizada com Sucesso',auth:true, token:token})
             
@@ -139,6 +140,24 @@ class Users{
              }
          })
      }
+
+     buscaPorName(userName,res){
+        const sql = `SELECT id,userName,email,password,full_name,join_date FROM USERS WHERE userName = ?`
+
+        conexao.query(sql,[userName],(erro,resultado)=>{
+            if(erro){
+                res.status(400).json(erro)
+            }else {
+                resultado = resultado[0]
+                if(!resultado){
+                    res.status(400).json(erro)
+                }else{
+                res.status(200).json(resultado)
+                }
+            }
+        })
+    }
+
     async altera(id,valores,res){
         const salt = await bcrypt.genSalt(12)
         const passwordHash = await bcrypt.hash(valores.password,salt)
