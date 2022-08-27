@@ -1,0 +1,14 @@
+h2{
+  margin-bottom: 50px;
+}
+.textTitle{
+  font-size: 25px;
+  font-weight: bold;
+  color: #004377;
+}
+.textCheck{
+  margin-left: 5px;
+}
+button{
+  margin-top: 5px;
+}
