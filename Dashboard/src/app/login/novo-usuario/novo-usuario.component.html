@@ -73,6 +73,6 @@
     Sim. Li e concordo com os termos.
   </label> -->
 
-  <button class="btn btn-primary btn-block d-grid gap-3 col-12" type="submit">Cadastro</button>
+  <button class="btn btn-primary btn-block d-grid gap-3 col-12" type="submit" [disabled]="!novoUsuarioForm.valid">Cadastro</button>
 </form>
 <p><strong>Já é um usuário? </strong><a [routerLink]="['']">Faça login.</a></p>
