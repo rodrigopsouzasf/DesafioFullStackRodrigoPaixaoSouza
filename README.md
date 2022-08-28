@@ -54,6 +54,8 @@ Consegui finalizar 100% das etapas solicitadas no documento do desafio, mas aind
 
 Foram criados os seguintes usuários admin, marcos, patricia e rodrigo todos possuem senha padrão "123456" para teste da API.
 
+Caso, seu usuário não esteja nessa lista, você poderá utilizar a tela de cadastro para criar um novo usuário.
+
 ## Alterações
 
 Foram incluidos alguns modelos de carros a mais para teste da aplicaçao.
